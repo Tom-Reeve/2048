@@ -1,0 +1,34 @@
+#container {
+    width: 400px;
+    height: 400px;
+
+    outline: 1px solid;
+}
+.square {
+    width: 87.5px;
+    height: 87.5px;
+    float: left;
+
+    margin-top: 10px;
+    margin-left: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 250%;
+    
+    outline: 1px solid;
+}
+.MoveUp {
+    animation-name: MoveUpAnimation;
+    animation-duration: 2s;
+}
+@keyframes MoveUpAnimation {
+    from  {
+        transform: translate3D(0px, 0px, 0px);
+    }
+    to {
+        transform: translate3D(0px, -97.5px, 0px);
+    }
+}
